@@ -1,6 +1,6 @@
 # 🌊 AquaMindAI
 
-<img width="600" height="498" alt="image" src="AquaMind-AI.png" />
+<img width="900" height="498" alt="image" src="AquaMind-AI.png" />
 
 
 AquaMindAI is an enterprise-grade IoT and AI-driven monitoring system designed to manage and optimize aquaponics ecosystems. By connecting physical sensors to a cloud database, AquaMindAI provides real-time data visualization, automated anomaly detection, and machine-learning-based forecasting to ensure optimal conditions for both fish and plants.
