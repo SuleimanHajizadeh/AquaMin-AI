@@ -1,0 +1,44 @@
+AquaMind AI — akvarium ekosistemini real vaxtda izləyən və süni intellekt dəstəyi ilə su keyfiyyəti, temperatur və canlıların həyat şəraitini optimallaşdıran smart sistemdir.
+AquaMind AI — akvarium ekosistemini yalnız müşahidə edən deyil, onu “anlayan” və aktiv şəkildə idarə edən ağıllı bio-texnoloji sistem kimi düşünülə bilər. Bu sistemin əsas məqsədi akvarium daxilində sabit və sağlam ekoloji balans yaratmaqdır: suyun keyfiyyəti, temperaturu, oksigen səviyyəsi, pH və canlıların davranış siqnalları real vaxtda analiz edilir və sistem bu məlumatlara əsasən avtomatik optimizasiya aparır.
+
+AquaMind AI bir neçə əsas hissədən ibarət inteqrasiya olunmuş platforma kimi işləyir:
+
+1. Sensor qat (data toplama):
+Akvarium daxilində yerləşdirilən sensorlar suyun temperaturunu, pH səviyyəsini, ammonyak/nitrit göstəricilərini və həll olunmuş oksigen miqdarını ölçür. Eyni zamanda suyun bulanıqlığı və işıq səviyyəsi də izlənilə bilər. İstəyə görə kamera modulu əlavə edilərək balıqların davranışı (hərəkət aktivliyi, qidalanma reaksiyası) da analiz olunur.
+
+2. Süni intellekt analiz sistemi:
+Toplanan bütün məlumatlar AI modeli tərəfindən analiz edilir. Sistem normal “sağlam ekosistem” davranışını öyrənir və ondan kənarlaşmaları aşkar edir. Məsələn:
+
+* Temperatur normadan qalxırsa soyutma sistemi aktivləşir
+* pH dəyişirsə balanslaşdırıcı mexanizm işə düşür
+* Balıqların qeyri-adi hərəkəti stress və ya oksigen çatışmazlığı kimi interpretasiya olunur
+
+3. Avtomatik idarəetmə (actuator sistemi):
+AI qərar verdikdən sonra sistem fiziki cihazlara siqnal göndərir:
+
+* Su qızdırıcısı və soyuducusu
+* Hava nasosu (oksigen artırma)
+* Filtr sistemləri
+* Avtomatik yemləmə modulu
+
+Bu hissə akvariumu “özünü tənzimləyən canlı sistem”ə çevirir.
+
+4. İstifadəçi interfeysi (mobil/web panel):
+İstifadəçi telefon və ya kompüterdən akvariumun vəziyyətini canlı izləyə bilir. Sistem:
+
+* Real vaxt qrafiklər
+* xəbərdarlıqlar (məsələn “oksigen düşür”)
+* gündəlik analiz hesabatları
+* tövsiyələr (su dəyişimi vaxtı, yemləmə planı)
+
+təqdim edir.
+
+5. Proqnozlaşdırma və öyrənmə:
+AquaMind AI yalnız indiki vəziyyəti yox, gələcəyi də təxmin edir. Məsələn:
+
+* “2 gün sonra suyun bulanıqlığı arta bilər”
+* “Filtr performansı azalır, təmizləmə lazımdır”
+
+Bu hissə sistemi sadə monitorinqdən çıxarıb “predictive aquarium intelligence” səviyyəsinə qaldırır.
+
+Nəticə olaraq, AquaMind AI akvariumu sadəcə dekorativ bir mühitdən çıxarıb, özünü idarə edən, öyrənən və canlıların rifahını prioritet edən ağıllı ekosistemə çevirir. Bu həm hobbi səviyyəsində, həm də elmi və bioinformatik tədqiqatlar üçün tətbiq oluna bilən bir platformadır.

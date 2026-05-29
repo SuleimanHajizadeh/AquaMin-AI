@@ -1,0 +1,70 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: aquamind_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: AquaMind2024Root
+      MYSQL_DATABASE: aquamind
+      MYSQL_USER: aquamind
+      MYSQL_PASSWORD: AquaMind2024Pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - aquamind-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "aquamind", "-pAquaMind2024Pass"]
+      interval: 10s
+      timeout: 10s
+      retries: 15
+
+  backend:
+    build: ./backend
+    container_name: aquamind_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: mysql+pymysql://aquamind:AquaMind2024Pass@mysql:3306/aquamind
+      SECRET_KEY: AquaMindSecretKey2024Azerbaijan
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - model-data:/app/models/saved
+    networks:
+      - aquamind-net
+
+  frontend:
+    build: ./frontend
+    container_name: aquamind_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - aquamind-net
+
+  streamlit:
+    build: ./streamlit_app
+    container_name: aquamind_streamlit
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    networks:
+      - aquamind-net
+
+networks:
+  aquamind-net:
+    driver: bridge
+
+volumes:
+  mysql-data:
+  model-data:
